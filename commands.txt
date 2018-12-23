@@ -8,3 +8,6 @@ docker build .
 docker build -t <docker-user>/<image-name>:latest .
 docker system prune (delete all stopped containers and build images)
 docker run -p 8080:8080 <imageName>
+
+docker-compose up (docker run <image>)
+docker-compose up --build (docker build . && docker run <image>)

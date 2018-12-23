@@ -10,6 +10,7 @@ docker build -t <docker-user>/<image-name>:latest .
 docker build -f Dockerfile.dev . (Build from a arbitrary file)
 docker system prune (delete all stopped containers and build images)
 docker run -p 8080:8080 <imageName>
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <containerId>
 
 docker-compose up (docker run <image>)
 docker-compose up --build (docker build . && docker run <image>)

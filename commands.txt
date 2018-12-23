@@ -14,3 +14,4 @@ docker-compose up (docker run <image>)
 docker-compose up --build (docker build . && docker run <image>)
 docker-copose up -deamon
 docker-compose down
+docker-compose ps (list runner containers from current directory with docker-compose.yml)

@@ -7,6 +7,7 @@ docker kill <containerId>
 docker exec -it <containerId> <command>  (Ctrl + d to exit, sh to enter shell)
 docker build .
 docker build -t <docker-user>/<image-name>:latest .
+docker build -f Dockerfile.dev . (Build from a arbitrary file)
 docker system prune (delete all stopped containers and build images)
 docker run -p 8080:8080 <imageName>
 
